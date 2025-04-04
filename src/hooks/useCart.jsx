@@ -19,8 +19,8 @@ const cartSubtotal = cartItems.filter(item => !item.isFreeGift)
 // progress free gift
 const progress = Math.min((cartSubtotal / THRESHOLD) * 100, 100);
 const amountAwayFromGift = Math.max(THRESHOLD - cartSubtotal, 0);
-const hasQualifyFreeGift = cartItems.some(item => item.isFreeGift);
     useEffect(() => {
+        const hasQualifyFreeGift = cartItems.some(item => item.isFreeGift);
         
         
 
