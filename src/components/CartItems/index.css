@@ -1,0 +1,69 @@
+.cart-item{
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.cart-items__title{
+    font-size: 1.125rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.cart-items_list{
+    border: 1px solid #e5e7eb;
+    border-radius: 0.5rem;
+}
+
+.cart-item:last-child{
+    border-bottom: none;
+}
+.cart-item__name{
+    font-weight: 500;
+}
+
+.cart-item__price{
+    color: #4b5563;
+    font-size: 0.875rem;
+}
+
+.cart-item__free-gift-badge{
+    padding: 0.25rem 0.5rem;
+    background-color: #dcfce7;
+    color: #15803d;
+    font-size: 0.75rem;
+    font-weight: 500;
+    border-radius: 0.25rem;
+}
+
+.cart-item__quantity-controls{
+    display: flex;
+    align-items: center;
+}
+
+.cart-item__quantity-button{
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 0.25rem;
+    color: white;
+    cursor: pointer;
+}
+
+.cart-item__quantity-button--decrease{
+    background-color: #ef4444;
+
+}
+
+.cart-item__quantity-button--increase{
+    background-color: #22c55e;
+}
+
+.cart-item__quantity{
+    margin: 0 0.75rem;
+}

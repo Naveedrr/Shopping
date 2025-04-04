@@ -1,0 +1,40 @@
+.cart-summary{
+    margin-bottom: 2rem;
+}
+
+.cart-summary__title{
+    font-size: 1.125rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.cart-summary__empty{
+    text-align: center;
+    padding: 2rem;
+    border: 1px solid #e5e7eb;
+    border-radius: 0.5rem;
+}
+
+.cart-summary__content{
+    border: 1px solid #e5e7eb;
+    border-radius: 0.5rem;
+    padding: 1rem;
+}
+
+.cart-summary__subtotal{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #e5e7eb;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+}
+
+.cart-summary__subtotal-amount{
+    font-weight: 700;
+}
+
+.cart-summary__free-gift-message{
+    color: #16a34a;
+    font-weight: 500;
+}
