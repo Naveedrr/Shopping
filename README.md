@@ -1,70 +1,60 @@
-# Getting Started with Create React App
+# `Shopping Cart with Free Gift`
+This React application simulates a simple shopping cart with product selection quantity adjustment and a free gift
+feature
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Features
 
-## Available Scripts
+-  Display a list of products with quantity selectors
+-  and "Add to Cart" buttons.
+-  Show the shopping cart with added products, quantities and prices.
+-  Enable users remove products quantities in the cart.
+-  Automatically add a free gift when the cart subtotal reaches a specified threshold
+-  Display a progress bar indicating how much more is needed to unlock the free gift.
+-  Uses React's built-in-state management (useState, useEffect) for managing produucts
+-  and cart data
 
-In the project directory, you can run:
+### `Install dependencies(if applicable,using npm or yarn)`
 
-### `npm start`
+ if using next.js\
+ bash\
+     npm install\
+or \
+bash \
+    yarn install
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### `Start the development server`
+   npm start
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### `Open your browser and access the application`
 
-### `npm test`
+    The application should be running at http://localhost:3000 (or the appropriate port).
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### `Project Structure`
 
-### `npm run build`
+-  src/ : Contains the React application source code.
+-  App.js : Main application component.
+-  components/ : Contains reusable components.
+-  ProductList.js : Displays the list of products.
+-  Cart.js : Displays the shopping cart.
+-  ProgressBar.js : Displays the progress bar for the free gift.
+-  public/ : Contains statci assets (if any).
+-  
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Implementation Details
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+-  The application uses useState to manage the product list and cart items.
+-  The useEffect hook is used to calculate the cart subtotal and determine if the free gift
+-  should be added.
+-  The free gift is added as a special item in the cart,
+-  with logic to prevent its manual removal.
+-  Quantity adjustment and item removals are handled by updating the cart state appropriately.
+-  The progress bar dynamically reflects the user's progress towards unlocking the free gift.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+**Notes**
+-  This application is designed to be a simple demonstration and can be further enhanced
+-  with more advanced features and stying.
+-  No external libraries are used, adhering the project restriction.
+-  The style and UI can be modified to fit the specific requirements.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
